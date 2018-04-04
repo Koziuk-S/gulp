@@ -21,6 +21,6 @@ module.exports = [
     },
     {
         name: '<email-footer />',
-        url: '/temp/footer.html'
+        url: '/temp/footer/begin-end.html'
     },
 ];
