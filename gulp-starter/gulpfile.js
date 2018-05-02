@@ -73,7 +73,7 @@ gulp.task('styles', function () {
 
 // js
 gulp.task('js', function () {
-  gulp.src(paths.src + 'js/main.js')
+  gulp.src(paths.src + 'js/*.js')
     .pipe(rigger())
     .pipe(sourcemaps.init())
     .pipe(babel({
@@ -109,9 +109,9 @@ gulp.task('img', function () {
 
 // watch
 gulp.task('watch', function () {
-  gulp.watch('src/html/**/*.html', ['html'])
-  gulp.watch('src/scss/**/*.scss', ['styles'])
-  gulp.watch('src/js/**/*.js', ['js'])
+  gulp.watch('src/**/*.html', ['html'])
+  gulp.watch('src/**/*.scss', ['styles'])
+  gulp.watch('src/**/*.js', ['js'])
   gulp.watch('src/img/**/*', ['img'])
 });
 
