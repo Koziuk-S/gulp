@@ -53,7 +53,7 @@ gulp.task('html', function () {
 
 // styles
 gulp.task('styles', function () {
-  gulp.src(paths.src + 'styles/*.scss')
+  gulp.src(paths.src + '*.scss')
     .pipe(sourcemaps.init())
     .pipe(sass().on('error', sass.logError))
     .pipe(autoprefixer({
